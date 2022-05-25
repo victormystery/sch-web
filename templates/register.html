@@ -1,0 +1,222 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Portal</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+  
+    
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="header" id="header">
+            <img src="{% static '/images/CHILDREN COMPANION.1[13557].png' %}">
+
+        </div>
+        <div class="sub">
+            <h1>APPLICATION FORM</h1>
+        </div>
+        
+        <section class="one">
+            <div class="ifrom">
+                <form action="register" method="post" id="iform">
+                   {% csrf_token %}
+                    <input type="submit" value="Submit">
+
+                    <label for="capture">attach passport</label>
+                    <input type="file" name="image" id="capture" accept="image/*" capture >
+                    <br>
+
+               
+                    <label for="surname">Surname </label>
+                    <input type="text" id="surname" name="surname"><br>
+                    <label for="other">Other Name </label>
+                    <input type="text" id="other" name="other"><br>
+                    <label for="dob">Date of Birth </label>
+                    <input type="date" id="dob" name="dob"><br>
+                    <label for="LGA">LGA </label>
+                    <input type="text" id="LGA" name="LGA"><br>
+                    <label for="state">State of Origin </label>
+                    <input type="text" id="state" name="state"> <br>
+                    <label for="sex">Sex</label>
+                    <select name="sex" id="sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+
+                    </select><br>
+                    <label for="home_address">Home Address</label>
+                    <input type="text" name="home_address"><br>
+                    <label for="previous_school">Previous School Name & Address</label>
+                    <input type="text" name="previous_school"><br>
+                    <label for="previous_class">Previous class with date</label>
+                    <input type="text" name="previous_class"><br>
+                    <label for="from_date">From</label>
+                    <input type="date" id="dob" name="from_date"><br>
+                    <label for="to">To</label>
+                    <input type="date" id="dob" name="to"><br>
+            
+                    <label for="father">name of father/guardian</label>
+                    <input type="text" name="father" >
+                    <label for="">home address</label>
+                    <input type="text" name="" id="">
+                    <label for="occupy">occupation</label>
+                    <input type="text" name="occupy" id="">
+                    <label for="">Name & Address of employer</label>
+                    <input type="text" name="" id="">
+                    <label for="">position in organisation</label>
+                    <input type="text" name="" id="">
+                    <label for="">office telephone number</label>
+                    <input type="number" name="" id="">
+                    <label for="mobile_father">mobile number</label>
+                    <input type="number" name="mobile_father" id="">
+                    <label for="email_father">E-mail Address</label>
+                    <input type="email" name="email_father" id="">
+               
+                <br>
+               
+                    <label for="mother">name of mother/guardian</label>
+                    <input type="text">
+                    <label for="">home address</label>
+                    <input type="text" name="" id="">
+                    <label for="occupation">occupation</label>
+                    <input type="text" name="occupation" id="">
+                    <label for="">Name & Address of employer</label>
+                    <input type="text" name="" id="">
+                    <label for="">position in organisation</label>
+                    <input type="text" name="" id="">
+                    <label for="">office telephone number</label>
+                    <input type="number" name="" id="">
+                    <label for="mobile_mother">mobile number</label>
+                    <input type="number" name="mobile_mother" id="">
+                    <label for="email_mother">E-mail Address</label>
+                    <input type="email" name="email_mother" id="">
+                    <br>
+
+
+                
+        
+            <h2>MEDICAL HISTORY OF THE CHILD</h2>
+
+            <ul>
+                <li>
+                    <p>has child been immunized/inoculated up to date?</p>
+                    <input type="radio" name="rad" id="rad">
+                    <label for="rad">yes</label>
+                    <input type="radio" name="rad" id="rad">
+                    <label for="rad">no</label>
+                    <p class="subscript">(please attach photocopies of medical certificate or evidence)</p>
+                    <input type="file" name="photo" id="photo" accept="image/*">
+                </li>
+                <li>
+                    <h2>Hearing:</h2>
+                    <p>any difficulty observed:</p>
+                    <input type="radio" name="hear" id="hear">
+                    <label for="hear">yes</label>
+                    <input type="radio" name="hear" id="hear">
+                    <label for="hear">no</label>
+                    <br>
+                    <p>any consultation with doctor done:</p>
+                    <input type="radio" name="doc" id="doc">
+                    <label for="doc">yes</label>
+                    <input type="radio" name="doc" id="doc">
+                    <label for="doc">no</label>
+                    <br>
+                    <p>If yes, Explain:</p>
+                    <textarea name="explain" id="" cols="30" rows="10"></textarea>
+
+                </li>
+                <li>
+                    <h2>Vision:</h2>
+                    <p>any consultation with doctor done:</p>
+                    <input type="radio" name="eye" id="eye">
+                    <label for="eye">yes</label>
+                    <input type="radio" name="eye" id="eye">
+                    <label for="eye">no</label>
+                    <br>
+                    <p>use of spectacles/corrective lenses:</p>
+                    <input type="radio" name="spec" id="spec">
+                    <label for="spec">yes</label>
+                    <input type="radio" name="spec" id="spec">
+                    <label for="spec">no</label>
+                </li>
+            </ul>
+            <p>does your child suffer from any illness that you want us to know before hand?</p>
+            <input type="radio" name="ill" id="ill">
+            <label for="ill">yes</label>
+            <input type="radio" name="ill" id="ill">
+            <label for="ill">no</label>
+            <br>
+            <p>if yes, describe:</p>
+            <textarea name="describe" id="" cols="30" rows="10"></textarea>
+
+
+
+            <p>please state any other relevant information you may wish to give:</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </section>
+
+        <section class="three">
+            <h1>parental consent form</h1>
+            <p>I agree to my child attending florence court international school.</p>
+            <p>I WILL:</p>
+            <ul>
+                <li>
+                    <p>see that my child goes to school regularly, on time, properly equipped and dressed appropriately
+                    </p>
+                </li>
+                <li>
+                    <p>make the school aware of any concern or problem that might affect my child's work or behaviour
+                    </p>
+                </li>
+                <li>
+                    <p>support the school's policies and guidelines for behaviour.</p>
+                </li>
+                <li>
+                    <p>support my child in homework and other opportunities for home-learning</p>
+                </li>
+                <li>
+                    <p>attend meetings and discussions about my child's progress</p>
+                </li>
+                <li>
+                    <p>get to know about my child's life at school.</p>
+                </li>
+            </ul>
+            <br>
+
+            
+                <label for="">name of student</label>
+                <input type="text" name="" id="">
+                <label for="">name of parent(father)/guardian</label>
+                <input type="text" name="" id="">
+                <label for="">father's signature</label>
+                <input type="file" name="" id="" accept="image/*"><br>
+                <label for="dob">date(registration)</label>
+                <input type="date" name="dob" id="dob">
+                <label for="">name of parent(mother)/guardian</label>
+                <input type="text" name="" id="">
+                <label for="">mother's signature</label>
+                <input type="file" name="" id="" accept="image/*"><br>
+                <label for="dob">date(registration)</label>
+                <input type="date" name="dob" id="dob">
+            
+                <label for="head">head teacher's name:</label>
+                <input type="text" name="head" id="head">
+                <label for="">head teacher's signature:</label>
+                <input type="file" name="" id="" accept="image/*">
+            
+        </section>
+        </form>
+    </div>
+
+</body>
+
+
+
+
+</html>

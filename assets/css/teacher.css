@@ -1,0 +1,12 @@
+main{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.page{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.student{
+    display: grid;
+    grid-template-columns: auto auto;
+}

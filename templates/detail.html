@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Online Study Website Design Tutorial</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <style>
+        .hello-meg{
+            font-size: 18px;
+            color: #fff;
+            margin-right: 20px;
+        }
+    </style>
+
+</head>
+<body>
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><img src="{% static 'images/logo1.png' %}" width="32px" height="32px"></img> FCIS</a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'home' %}" class="active">home</a></li>
+            
+            <li><a href="">gallery</a></li>
+            <li><a href="">admission</a>
+                <div class="drop drop-content" id="drop">
+                    <ul>
+                        <li><a href="">how to apply</a></li>
+                        <!-- <li><a href="{% url 'register' %}">admission form</a></li> -->
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="fas fa-user-circle">
+        <span class="hello-meg"><a href="{% url 'parent' %}" class="hello-meg">Register</a></span>
+        <span class="hello-meg"><a href="{% url 'account' %}" class="hello-meg">Login</a></span>
+   </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form  -->
+
+<!-- <div class="login-form popup">
+
+    <form action="" method="post">
+        <h3>login</h3>
+        <input type="email" placeholder="mail" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="{% url 'register'%}" target="_blank">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div> -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about" style="background-color: #1889f3;">
+
+    <div class="image">
+        <img src="{% static '/images/DSC_4344.JPG' %}" alt="" >
+    </div>
+
+    <div class="content vis">
+        <h3>vision</h3>
+        <p>Our vision is to nurture with Christian principle and produce well integrated and unique individuals who will be national and global leaders.</p>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex delectus ducimus dignissimos pariatur. Amet sed distinctio earum dolorum nulla, in obcaecati aliquid modi quos magni ducimus culpa nobis laudantium incidunt.</p> -->
+        <!-- <a href="#"><button class="btn">learn more</button></a> -->
+    </div>
+    
+    <div class="content core">
+        <h3>core values</h3>
+        <p>Accountability	</p>
+        <p>Integrity	</p>
+        <p>Professionalism	</p>
+        <p>Respect</p>
+        <p>Service	</p>
+        <!-- <a href="#"><button class="btn">learn more</button></a> -->
+    </div>
+
+    <div class="content mise">
+        <h3>mission</h3>
+        <p>Create an environment that makes learning fun.</p>
+        <p>Help children discover their unique gifts and talent therefore we make co-curriculum activities a strong part of our educational program.</p>
+        <p>Create opportunity to solve problems.</p>
+        <p>Instill a sense of self-respect and integrity through Christian education.</p>
+        <p>Over all a friendly environment with a love and care is provided to ensure that time spent in the school is enjoyable, pleasant, stimulating mentally and spiritually enriching.</p>
+
+        <!-- <a href="#"><button class="btn">learn more</button></a> -->
+    </div>
+
+
+</section>
+
+<!-- about section ends -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">Ilawe Road</a>
+            <a href="#">Ikere Road</a>
+           
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+           
+            <a href="#">staff</a>
+            <a href="#">student</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <a href=""><i class="fas fa-map-marker-alt"></i> florence drive ilawe road ado-ekiti </a></p>
+            <p> <i class="fas fa-envelope"></i> florencecourtschool@gmail.com </p>
+            <!-- <p> <i class="fas fa-phone"></i> +123-456-7890 </p> -->
+        </div>
+
+    </div>
+    
+    <h1 class="credit">created by <a href="#">FCIS ICT-Unit</a> all rights reserved. </h1>
+        
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{% static '/js/script.js' %}"></script>
+
+</body>
+</html>

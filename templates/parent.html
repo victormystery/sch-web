@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration portal</title>
+    <link rel="stylesheet" href="{% static 'css/parent.css' %}" />
+  </head>
+  <body>
+    <h2>Registration form</h2>
+    <div class="header">
+      <form action="parent" method="post">
+        {% csrf_token %}
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your Username"
+        />
+        <label for="mail">Email</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Enter your Email Address"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password1"
+          id="password"
+          placeholder="Create Password"
+        />
+        <label for="password">Re: Password</label>
+        <input
+          type="password"
+          name="password2"
+          id="password"
+          placeholder="Confirm Password"
+        />
+        <button type="submit" value="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>

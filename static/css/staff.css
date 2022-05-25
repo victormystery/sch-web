@@ -1,0 +1,107 @@
+.desk{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    /* background-color: darkgrey; */
+}
+
+.desk::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.desk img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 150px;
+}
+.desk h1{
+    float: left;
+}
+.desk p{
+    display: flex;
+    font-size: 14px;
+    margin-top: 10px;
+    padding-top: 15px;
+    text-align: start;
+}
+.principal{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    
+    /* background-color: darkgrey; */
+}
+
+.principal::after{
+    content: "";
+    clear: both;
+    display: flex;
+}
+.principal img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 150px;
+}
+.principal h2{
+    float: left;
+    font-size: 25px;
+}
+.principal p{
+    text-align: start;
+}
+
+.head{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    
+    /* background-color: darkgrey; */
+}
+
+.head::after{
+    content: "";
+    clear: both;
+    display: flex;
+}
+.head img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 150px;
+}
+.head h2{
+    float: left;
+    font-size: 25px;
+}
+
+.admin{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    
+    /* background-color: darkgrey; */
+}
+
+.admin::after{
+    content: "";
+    clear: both;
+    display: flex;
+}
+.admin img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 150px;
+}
+.admin h2{
+    float: left;
+    font-size: 25px;
+}
+

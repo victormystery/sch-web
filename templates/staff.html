@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Online Study Website Design Tutorial</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/staff.css' %}">
+    
+
+</head>
+<body>
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><img src="{% static 'images/logo1.png' %}" width="32px" height="32px"></img> FCIS</a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'base' %}" class="active">home</a></li>
+            <li><a href="{% url 'staff' %}">staff</a>
+                <!-- <div class="drop drop-content" id="drop">
+                    <ul>
+                        <li><a href="#">propiertor desk</a></li>
+                        <li><a href="#">management</a></li>
+                        <li><a href="#">academic</a></li>
+                    </ul>
+                </div> -->
+            </li>
+            <!-- <li><a href="{% url 'student' %}">student</a>
+                <div class="drop drop-content" id="drop">
+                    <ul>
+                        <li><a href="">primary</a></li>
+                        <li><a href="">secondary</a></li>
+                    </ul>
+                </div>
+            </li> -->
+            <li><a href="{% url 'gallery' %}">gallery</a></li>
+            <li><a href="{% url 'admission' %}">admission</a>
+                <div class="drop drop-content" id="drop">
+                    <ul>
+                        <li><a href="">how to apply</a></li>
+                        <!-- <li><a href="{% url 'register' %}">admission form</a></li> -->
+                    </ul>
+                </div>
+            </li>
+            <li><a href="{% url 'about' %}">about</a></li>
+            <li><a href="{% url 'contact' %}">contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="fas fa-user-circle"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form  -->
+
+<!-- <div class="login-form popup">
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" placeholder="username" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="{% url 'register'%}">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div> -->
+
+    <!-- teacher section starts  -->
+
+<section class="teacher" id="teacher">
+
+    
+    <!-- <a href="#"><button class="btn">lear</button></a> -->
+    
+
+    <div class="manage"> 
+        <h1 class="heading">FCIS managerial staff</h1>
+
+        <div class="principal">
+            <img src="{% static 'images/' %}" alt="">
+            <h2>principal</h2><br>
+            <p style="padding: 15px;"></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque minima fuga aut perspiciatis quod veritatis dolorum saepe atque porro fugit tempore beatae consequatur voluptas ipsam, blanditiis et sunt dicta.</p>
+        </div>
+
+        <div class="head">
+            <img src="{% static 'images/gallery-5.jpeg' %}" alt="">
+            <h2>head-teacher</h2><br> 
+            <p style="padding: 15px;"></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odio, dolor veritatis voluptates voluptatem molestias deserunt laborum nobis, possimus ipsam error esse velit harum vero id quod neque iusto mollitia.</p>
+        </div>
+       
+        
+        <div class="admin">
+            <img src="{% static 'images/' %}" alt="">
+            <h2>admin-Primary</h2><br>
+            <p style="padding: 15px;"></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ex vitae veniam maxime nobis temporibus distinctio porro delectus qui veritatis magni, doloribus atque facilis non dicta minus harum facere? Illum?</p>
+
+           
+        </div>
+        <div class="admin">
+            <img src="{% static 'images/' %}" alt="">
+            <h2>admin-Secondary</h2><br>
+            <p style="padding: 15px;"></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ex vitae veniam maxime nobis temporibus distinctio porro delectus qui veritatis magni, doloribus atque facilis non dicta minus harum facere? Illum?</p>
+
+           
+        </div>
+        
+        
+        
+    </div>
+
+
+  
+    </section>
+    
+    <!-- teacher section ends -->
+
+    <!-- footer section starts  -->
+
+    <div class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">Ilawe Road</a>
+                <a href="#">Ikere Road</a>
+               
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+               
+                <a href="#">staff</a>
+                <a href="#">student</a>
+                
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <p> <a href=""><i class="fas fa-map-marker-alt"></i> florence drive ilawe road ado-ekiti </a></p>
+                <p> <i class="fas fa-envelope"></i> florencecourtschool@gmail.com </p>
+                <!-- <p> <i class="fas fa-phone"></i> +123-456-7890 </p> -->
+            </div>
+    
+        </div>
+        
+        <h1 class="credit">created by <a href="#">FCIS ICT-Unit</a> all rights reserved. </h1>
+            
+    </div>
+    
+    <!-- footer section ends -->
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{% static 'js/script.js' %}"></script>
+
+    
+</body>
+</html>
